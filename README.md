@@ -1,5 +1,5 @@
 
-# AzSQL-to-AzBlob
+# AzSQL to AzBlob
 
 
 
