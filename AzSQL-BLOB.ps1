@@ -47,6 +47,34 @@
 
 #>
 
+# Check if AzureRM.Profile module is installed
+if (-not (Get-Module -Name AzureRM.Profile -ListAvailable)) {
+    # If the module is not installed, install it
+    Install-Module -Name AzureRM.Profile
+}
+Import-Module AzureRM.Profile
+
+# Check if AzureRM.Resources module is installed
+if (-not (Get-Module -Name AzureRM.Resources -ListAvailable)) {
+    # If the module is not installed, install it
+    Install-Module -Name AzureRM.Resources
+}
+Import-Module AzureRM.Resources
+
+# Check if AzureRM.SQL module is installed
+if (-not (Get-Module -Name AzureRM.SQL -ListAvailable)) {
+    # If the module is not installed, install it
+    Install-Module -Name AzureRM.SQL
+}
+Import-Module AzureRM.SQL
+
+# Check if AzureRM.Storage module is installed
+if (-not (Get-Module -Name AzureRM.Storage -ListAvailable)) {
+    # If the module is not installed, install it
+    Install-Module -Name AzureRM.Storage
+}
+Import-Module AzureRM.Storage
+
 param(
     [parameter(Mandatory=$false)]
 	[String] $ResourceGroupName,
